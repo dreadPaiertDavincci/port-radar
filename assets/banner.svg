@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Port Radar Banner">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="55%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1E1B2E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="22%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#E11D48" stop-opacity="0.28"/>
+      <stop offset="60%" stop-color="#E11D48" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#E11D48"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="20" fill="url(#bg)"/>
+  <rect width="1200" height="360" rx="20" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1198" height="358" rx="19" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+
+  <!-- Subtle Grid -->
+  <g stroke="#FFFFFF" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="90" x2="1200" y2="90"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="270" x2="1200" y2="270"/>
+    <line x1="300" y1="0" x2="300" y2="360"/>
+    <line x1="600" y1="0" x2="600" y2="360"/>
+    <line x1="900" y1="0" x2="900" y2="360"/>
+  </g>
+
+  <!-- Radar Graphic (Left) -->
+  <g transform="translate(200, 180)">
+    <circle r="115" fill="#E11D48" fill-opacity="0.05" stroke="#F43F5E" stroke-opacity="0.22" stroke-width="1.5"/>
+    <circle r="82" fill="none" stroke="#F43F5E" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="6 6"/>
+    <circle r="48" fill="none" stroke="#F43F5E" stroke-opacity="0.55" stroke-width="2"/>
+    <line x1="-115" y1="0" x2="115" y2="0" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    <line x1="0" y1="-115" x2="0" y2="115" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+
+    <!-- Radar Sweep Wedge -->
+    <path d="M0,0 L78,-84 A115,115 0 0,1 114,14 Z" fill="#F43F5E" fill-opacity="0.18"/>
+    <line x1="0" y1="0" x2="78" y2="-84" stroke="#FB7185" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Active Port Nodes -->
+    <circle cx="48" cy="-42" r="5" fill="#10B981"/>
+    <circle cx="48" cy="-42" r="10" fill="none" stroke="#10B981" stroke-opacity="0.4" stroke-width="1.5"/>
+
+    <circle cx="-58" cy="34" r="5" fill="#F59E0B"/>
+    <circle cx="64" cy="46" r="6" fill="#F43F5E"/>
+    <circle cx="64" cy="46" r="12" fill="none" stroke="#F43F5E" stroke-opacity="0.45" stroke-width="1.5"/>
+
+    <!-- Center Port Icon -->
+    <circle r="18" fill="url(#accent)"/>
+    <rect x="-7" y="-6" width="14" height="11" rx="2" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="-3" y1="-6" x2="-3" y2="-2" stroke="#FFFFFF" stroke-width="2"/>
+    <line x1="3" y1="-6" x2="3" y2="-2" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <!-- Title & Tagline (Right) -->
+  <g transform="translate(365, 96)">
+    <rect x="0" y="-32" width="142" height="26" rx="13" fill="#E11D48" fill-opacity="0.18" stroke="#F43F5E" stroke-opacity="0.45"/>
+    <text x="71" y="-15" text-anchor="middle" fill="#FDA4AF" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">RELEASE v1.0.0</text>
+
+    <rect x="154" y="-32" width="232" height="26" rx="13" fill="#0F172A" fill-opacity="0.85" stroke="#38BDF8" stroke-opacity="0.55"/>
+    <text x="270" y="-15" text-anchor="middle" fill="#7DD3FC" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="12" font-weight="700" letter-spacing="0.4">portradar.ahmadshamy.com</text>
+
+    <text x="0" y="38" fill="#FFFFFF" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="54" font-weight="800" letter-spacing="-1">Port Radar</text>
+
+    <text x="0" y="76" fill="#CBD5E1" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="21" font-weight="500">See Every Active Port. Spot Conflicts. Kill Stuck Processes.</text>
+
+    <!-- Feature Pills -->
+    <g transform="translate(0, 108)">
+      <rect x="0" y="0" width="150" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <text x="75" y="22" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600">Windows · macOS · Linux</text>
+
+      <rect x="164" y="0" width="148" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <text x="238" y="22" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600">Live TCP &amp; UDP Scan</text>
+
+      <rect x="326" y="0" width="154" height="34" rx="8" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.12"/>
+      <text x="403" y="22" text-anchor="middle" fill="#E2E8F0" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13" font-weight="600">100% Offline · SQLite</text>
+    </g>
+
+    <g transform="translate(0, 158)">
+      <rect x="0" y="0" width="286" height="34" rx="9" fill="url(#accent)"/>
+      <text x="143" y="22" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="13.5" font-weight="700">Visit portradar.ahmadshamy.com  →</text>
+    </g>
+  </g>
+</svg>
